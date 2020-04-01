@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B14E039B24346C56000DB743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E039A24346C56000DB743 /* AppDelegate.swift */; };
+		B14E039D24346C63000DB743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14E039C24346C63000DB743 /* Assets.xcassets */; };
+		B14E03A024346C63000DB743 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B14E039E24346C63000DB743 /* MainMenu.xib */; };
+		B14E03B224346DC9000DB743 /* SharedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03AB24346DC9000DB743 /* SharedStrings.swift */; };
+		B14E03B324346DC9000DB743 /* Relationships.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03AC24346DC9000DB743 /* Relationships.swift */; };
+		B14E03B424346DC9000DB743 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03AD24346DC9000DB743 /* Comments.swift */; };
+		B14E03B524346DC9000DB743 /* CoreXLSX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03AE24346DC9000DB743 /* CoreXLSX.swift */; };
+		B14E03B624346DC9000DB743 /* Workbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03AF24346DC9000DB743 /* Workbook.swift */; };
+		B14E03B724346DC9000DB743 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03B024346DC9000DB743 /* Styles.swift */; };
+		B14E03B824346DC9000DB743 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03B124346DC9000DB743 /* Path.swift */; };
+		B14E03BE24346DE8000DB743 /* Worksheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03B924346DE8000DB743 /* Worksheet.swift */; };
+		B14E03BF24346DE8000DB743 /* CellReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03BA24346DE8000DB743 /* CellReference.swift */; };
+		B14E03C024346DE8000DB743 /* ColumnReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03BB24346DE8000DB743 /* ColumnReference.swift */; };
+		B14E03C124346DE8000DB743 /* CellQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03BC24346DE8000DB743 /* CellQueries.swift */; };
+		B14E03C224346DE8000DB743 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03BD24346DE8000DB743 /* Cell.swift */; };
+		B14E03D224346F34000DB743 /* XMLKeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03C824346F34000DB743 /* XMLKeyedEncodingContainer.swift */; };
+		B14E03D324346F34000DB743 /* XMLUnkeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03C924346F34000DB743 /* XMLUnkeyedEncodingContainer.swift */; };
+		B14E03D424346F34000DB743 /* DynamicNodeEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03CA24346F34000DB743 /* DynamicNodeEncoding.swift */; };
+		B14E03D524346F34000DB743 /* SingleValueEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03CB24346F34000DB743 /* SingleValueEncodingContainer.swift */; };
+		B14E03D624346F34000DB743 /* XMLEncodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03CC24346F34000DB743 /* XMLEncodingStorage.swift */; };
+		B14E03D724346F34000DB743 /* XMLReferencingEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03CD24346F34000DB743 /* XMLReferencingEncoder.swift */; };
+		B14E03D824346F34000DB743 /* XMLChoiceEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03CE24346F34000DB743 /* XMLChoiceEncodingContainer.swift */; };
+		B14E03D924346F34000DB743 /* XMLEncoderImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03CF24346F34000DB743 /* XMLEncoderImplementation.swift */; };
+		B14E03DA24346F34000DB743 /* XMLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03D024346F34000DB743 /* XMLEncoder.swift */; };
+		B14E03DB24346F34000DB743 /* EncodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03D124346F34000DB743 /* EncodingErrorExtension.swift */; };
+		B14E03E524346F3E000DB743 /* DynamicNodeDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03DC24346F3E000DB743 /* DynamicNodeDecoding.swift */; };
+		B14E03E624346F3E000DB743 /* XMLKeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03DD24346F3E000DB743 /* XMLKeyedDecodingContainer.swift */; };
+		B14E03E724346F3E000DB743 /* XMLChoiceDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03DE24346F3E000DB743 /* XMLChoiceDecodingContainer.swift */; };
+		B14E03E824346F3E000DB743 /* SingleValueDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03DF24346F3E000DB743 /* SingleValueDecodingContainer.swift */; };
+		B14E03E924346F3E000DB743 /* XMLDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03E024346F3E000DB743 /* XMLDecoder.swift */; };
+		B14E03EA24346F3E000DB743 /* XMLUnkeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03E124346F3E000DB743 /* XMLUnkeyedDecodingContainer.swift */; };
+		B14E03EB24346F3F000DB743 /* XMLDecodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03E224346F3E000DB743 /* XMLDecodingStorage.swift */; };
+		B14E03EC24346F3F000DB743 /* DecodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03E324346F3E000DB743 /* DecodingErrorExtension.swift */; };
+		B14E03ED24346F3F000DB743 /* XMLDecoderImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03E424346F3E000DB743 /* XMLDecoderImplementation.swift */; };
+		B14E040024346F5F000DB743 /* DateBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03EE24346F5F000DB743 /* DateBox.swift */; };
+		B14E040124346F5F000DB743 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03EF24346F5F000DB743 /* Box.swift */; };
+		B14E040224346F5F000DB743 /* KeyedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03F024346F5F000DB743 /* KeyedBox.swift */; };
+		B14E040324346F5F000DB743 /* DecimalBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03F124346F5F000DB743 /* DecimalBox.swift */; };
+		B14E040424346F5F000DB743 /* ChoiceBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03F224346F5F000DB743 /* ChoiceBox.swift */; };
+		B14E040524346F5F000DB743 /* DataBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03F324346F5F000DB743 /* DataBox.swift */; };
+		B14E040624346F5F000DB743 /* SingleKeyedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03F424346F5F000DB743 /* SingleKeyedBox.swift */; };
+		B14E040724346F5F000DB743 /* NullBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03F524346F5F000DB743 /* NullBox.swift */; };
+		B14E040824346F5F000DB743 /* UnkeyedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03F624346F5F000DB743 /* UnkeyedBox.swift */; };
+		B14E040924346F5F000DB743 /* BoolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03F724346F5F000DB743 /* BoolBox.swift */; };
+		B14E040A24346F5F000DB743 /* SharedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03F824346F5F000DB743 /* SharedBox.swift */; };
+		B14E040B24346F5F000DB743 /* IntBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03F924346F5F000DB743 /* IntBox.swift */; };
+		B14E040C24346F5F000DB743 /* DoubleBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03FA24346F5F000DB743 /* DoubleBox.swift */; };
+		B14E040D24346F5F000DB743 /* FloatBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03FB24346F5F000DB743 /* FloatBox.swift */; };
+		B14E040E24346F5F000DB743 /* StringBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03FC24346F5F000DB743 /* StringBox.swift */; };
+		B14E040F24346F5F000DB743 /* ValueBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03FD24346F5F000DB743 /* ValueBox.swift */; };
+		B14E041024346F5F000DB743 /* UIntBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03FE24346F5F000DB743 /* UIntBox.swift */; };
+		B14E041124346F5F000DB743 /* URLBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03FF24346F5F000DB743 /* URLBox.swift */; };
+		B14E041B24346F6C000DB743 /* XMLHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E041224346F6C000DB743 /* XMLHeader.swift */; };
+		B14E041C24346F6C000DB743 /* Metatypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E041324346F6C000DB743 /* Metatypes.swift */; };
+		B14E041D24346F6C000DB743 /* XMLChoiceCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E041424346F6C000DB743 /* XMLChoiceCodingKey.swift */; };
+		B14E041E24346F6C000DB743 /* XMLCoderElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E041524346F6C000DB743 /* XMLCoderElement.swift */; };
+		B14E041F24346F6C000DB743 /* XMLStackParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E041624346F6C000DB743 /* XMLStackParser.swift */; };
+		B14E042024346F6C000DB743 /* ISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E041724346F6C000DB743 /* ISO8601DateFormatter.swift */; };
+		B14E042124346F6C000DB743 /* XMLKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E041824346F6C000DB743 /* XMLKey.swift */; };
+		B14E042224346F6C000DB743 /* KeyedStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E041924346F6C000DB743 /* KeyedStorage.swift */; };
+		B14E042324346F6C000DB743 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E041A24346F6C000DB743 /* String+Extensions.swift */; };
+		B14E042E243470CC000DB743 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E0426243470CC000DB743 /* Entry.swift */; };
+		B14E042F243470CC000DB743 /* Data+Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E0427243470CC000DB743 /* Data+Compression.swift */; };
+		B14E0430243470CC000DB743 /* Archive+Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E0428243470CC000DB743 /* Archive+Reading.swift */; };
+		B14E0431243470CC000DB743 /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E0429243470CC000DB743 /* Archive.swift */; };
+		B14E0432243470CC000DB743 /* Data+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E042A243470CC000DB743 /* Data+Serialization.swift */; };
+		B14E0433243470CC000DB743 /* FileManager+ZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E042B243470CC000DB743 /* FileManager+ZIP.swift */; };
+		B14E0434243470CC000DB743 /* Archive+MemoryFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E042C243470CC000DB743 /* Archive+MemoryFile.swift */; };
+		B14E0435243470CC000DB743 /* Archive+Writing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E042D243470CC000DB743 /* Archive+Writing.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B14E039724346C56000DB743 /* HomeMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B14E039A24346C56000DB743 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B14E039C24346C63000DB743 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B14E039F24346C63000DB743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B14E03A124346C63000DB743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B14E03A224346C63000DB743 /* HomeMoney.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeMoney.entitlements; sourceTree = "<group>"; };
+		B14E03AB24346DC9000DB743 /* SharedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedStrings.swift; sourceTree = "<group>"; };
+		B14E03AC24346DC9000DB743 /* Relationships.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relationships.swift; sourceTree = "<group>"; };
+		B14E03AD24346DC9000DB743 /* Comments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
+		B14E03AE24346DC9000DB743 /* CoreXLSX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreXLSX.swift; sourceTree = "<group>"; };
+		B14E03AF24346DC9000DB743 /* Workbook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workbook.swift; sourceTree = "<group>"; };
+		B14E03B024346DC9000DB743 /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		B14E03B124346DC9000DB743 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		B14E03B924346DE8000DB743 /* Worksheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worksheet.swift; sourceTree = "<group>"; };
+		B14E03BA24346DE8000DB743 /* CellReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellReference.swift; sourceTree = "<group>"; };
+		B14E03BB24346DE8000DB743 /* ColumnReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnReference.swift; sourceTree = "<group>"; };
+		B14E03BC24346DE8000DB743 /* CellQueries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellQueries.swift; sourceTree = "<group>"; };
+		B14E03BD24346DE8000DB743 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		B14E03C824346F34000DB743 /* XMLKeyedEncodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLKeyedEncodingContainer.swift; sourceTree = "<group>"; };
+		B14E03C924346F34000DB743 /* XMLUnkeyedEncodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLUnkeyedEncodingContainer.swift; sourceTree = "<group>"; };
+		B14E03CA24346F34000DB743 /* DynamicNodeEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicNodeEncoding.swift; sourceTree = "<group>"; };
+		B14E03CB24346F34000DB743 /* SingleValueEncodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleValueEncodingContainer.swift; sourceTree = "<group>"; };
+		B14E03CC24346F34000DB743 /* XMLEncodingStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLEncodingStorage.swift; sourceTree = "<group>"; };
+		B14E03CD24346F34000DB743 /* XMLReferencingEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLReferencingEncoder.swift; sourceTree = "<group>"; };
+		B14E03CE24346F34000DB743 /* XMLChoiceEncodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLChoiceEncodingContainer.swift; sourceTree = "<group>"; };
+		B14E03CF24346F34000DB743 /* XMLEncoderImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLEncoderImplementation.swift; sourceTree = "<group>"; };
+		B14E03D024346F34000DB743 /* XMLEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLEncoder.swift; sourceTree = "<group>"; };
+		B14E03D124346F34000DB743 /* EncodingErrorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodingErrorExtension.swift; sourceTree = "<group>"; };
+		B14E03DC24346F3E000DB743 /* DynamicNodeDecoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicNodeDecoding.swift; sourceTree = "<group>"; };
+		B14E03DD24346F3E000DB743 /* XMLKeyedDecodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLKeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		B14E03DE24346F3E000DB743 /* XMLChoiceDecodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLChoiceDecodingContainer.swift; sourceTree = "<group>"; };
+		B14E03DF24346F3E000DB743 /* SingleValueDecodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleValueDecodingContainer.swift; sourceTree = "<group>"; };
+		B14E03E024346F3E000DB743 /* XMLDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLDecoder.swift; sourceTree = "<group>"; };
+		B14E03E124346F3E000DB743 /* XMLUnkeyedDecodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLUnkeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		B14E03E224346F3E000DB743 /* XMLDecodingStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLDecodingStorage.swift; sourceTree = "<group>"; };
+		B14E03E324346F3E000DB743 /* DecodingErrorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodingErrorExtension.swift; sourceTree = "<group>"; };
+		B14E03E424346F3E000DB743 /* XMLDecoderImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLDecoderImplementation.swift; sourceTree = "<group>"; };
+		B14E03EE24346F5F000DB743 /* DateBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateBox.swift; sourceTree = "<group>"; };
+		B14E03EF24346F5F000DB743 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		B14E03F024346F5F000DB743 /* KeyedBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyedBox.swift; sourceTree = "<group>"; };
+		B14E03F124346F5F000DB743 /* DecimalBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalBox.swift; sourceTree = "<group>"; };
+		B14E03F224346F5F000DB743 /* ChoiceBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceBox.swift; sourceTree = "<group>"; };
+		B14E03F324346F5F000DB743 /* DataBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBox.swift; sourceTree = "<group>"; };
+		B14E03F424346F5F000DB743 /* SingleKeyedBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleKeyedBox.swift; sourceTree = "<group>"; };
+		B14E03F524346F5F000DB743 /* NullBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullBox.swift; sourceTree = "<group>"; };
+		B14E03F624346F5F000DB743 /* UnkeyedBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnkeyedBox.swift; sourceTree = "<group>"; };
+		B14E03F724346F5F000DB743 /* BoolBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolBox.swift; sourceTree = "<group>"; };
+		B14E03F824346F5F000DB743 /* SharedBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedBox.swift; sourceTree = "<group>"; };
+		B14E03F924346F5F000DB743 /* IntBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntBox.swift; sourceTree = "<group>"; };
+		B14E03FA24346F5F000DB743 /* DoubleBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleBox.swift; sourceTree = "<group>"; };
+		B14E03FB24346F5F000DB743 /* FloatBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatBox.swift; sourceTree = "<group>"; };
+		B14E03FC24346F5F000DB743 /* StringBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringBox.swift; sourceTree = "<group>"; };
+		B14E03FD24346F5F000DB743 /* ValueBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueBox.swift; sourceTree = "<group>"; };
+		B14E03FE24346F5F000DB743 /* UIntBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIntBox.swift; sourceTree = "<group>"; };
+		B14E03FF24346F5F000DB743 /* URLBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLBox.swift; sourceTree = "<group>"; };
+		B14E041224346F6C000DB743 /* XMLHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLHeader.swift; sourceTree = "<group>"; };
+		B14E041324346F6C000DB743 /* Metatypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metatypes.swift; sourceTree = "<group>"; };
+		B14E041424346F6C000DB743 /* XMLChoiceCodingKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLChoiceCodingKey.swift; sourceTree = "<group>"; };
+		B14E041524346F6C000DB743 /* XMLCoderElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLCoderElement.swift; sourceTree = "<group>"; };
+		B14E041624346F6C000DB743 /* XMLStackParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLStackParser.swift; sourceTree = "<group>"; };
+		B14E041724346F6C000DB743 /* ISO8601DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO8601DateFormatter.swift; sourceTree = "<group>"; };
+		B14E041824346F6C000DB743 /* XMLKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLKey.swift; sourceTree = "<group>"; };
+		B14E041924346F6C000DB743 /* KeyedStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyedStorage.swift; sourceTree = "<group>"; };
+		B14E041A24346F6C000DB743 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		B14E0426243470CC000DB743 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		B14E0427243470CC000DB743 /* Data+Compression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Compression.swift"; sourceTree = "<group>"; };
+		B14E0428243470CC000DB743 /* Archive+Reading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Archive+Reading.swift"; sourceTree = "<group>"; };
+		B14E0429243470CC000DB743 /* Archive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Archive.swift; sourceTree = "<group>"; };
+		B14E042A243470CC000DB743 /* Data+Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Serialization.swift"; sourceTree = "<group>"; };
+		B14E042B243470CC000DB743 /* FileManager+ZIP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+ZIP.swift"; sourceTree = "<group>"; };
+		B14E042C243470CC000DB743 /* Archive+MemoryFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Archive+MemoryFile.swift"; sourceTree = "<group>"; };
+		B14E042D243470CC000DB743 /* Archive+Writing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Archive+Writing.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B14E039424346C56000DB743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B14E038E24346C56000DB743 = {
+			isa = PBXGroup;
+			children = (
+				B14E042424347097000DB743 /* weichsel */,
+				B14E03A824346D46000DB743 /* MaxDesiatov */,
+				B14E039924346C56000DB743 /* HomeMoney */,
+				B14E039824346C56000DB743 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B14E039824346C56000DB743 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B14E039724346C56000DB743 /* HomeMoney.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B14E039924346C56000DB743 /* HomeMoney */ = {
+			isa = PBXGroup;
+			children = (
+				B14E039A24346C56000DB743 /* AppDelegate.swift */,
+				B14E039C24346C63000DB743 /* Assets.xcassets */,
+				B14E039E24346C63000DB743 /* MainMenu.xib */,
+				B14E03A124346C63000DB743 /* Info.plist */,
+				B14E03A224346C63000DB743 /* HomeMoney.entitlements */,
+			);
+			path = HomeMoney;
+			sourceTree = "<group>";
+		};
+		B14E03A824346D46000DB743 /* MaxDesiatov */ = {
+			isa = PBXGroup;
+			children = (
+				B14E03C324346E41000DB743 /* XMLCoder */,
+				B14E03A924346D54000DB743 /* CoreXLSX */,
+			);
+			path = MaxDesiatov;
+			sourceTree = "<group>";
+		};
+		B14E03A924346D54000DB743 /* CoreXLSX */ = {
+			isa = PBXGroup;
+			children = (
+				B14E03AA24346D80000DB743 /* Worksheet */,
+				B14E03AD24346DC9000DB743 /* Comments.swift */,
+				B14E03AE24346DC9000DB743 /* CoreXLSX.swift */,
+				B14E03B124346DC9000DB743 /* Path.swift */,
+				B14E03AC24346DC9000DB743 /* Relationships.swift */,
+				B14E03AB24346DC9000DB743 /* SharedStrings.swift */,
+				B14E03B024346DC9000DB743 /* Styles.swift */,
+				B14E03AF24346DC9000DB743 /* Workbook.swift */,
+			);
+			path = CoreXLSX;
+			sourceTree = "<group>";
+		};
+		B14E03AA24346D80000DB743 /* Worksheet */ = {
+			isa = PBXGroup;
+			children = (
+				B14E03BD24346DE8000DB743 /* Cell.swift */,
+				B14E03BC24346DE8000DB743 /* CellQueries.swift */,
+				B14E03BA24346DE8000DB743 /* CellReference.swift */,
+				B14E03BB24346DE8000DB743 /* ColumnReference.swift */,
+				B14E03B924346DE8000DB743 /* Worksheet.swift */,
+			);
+			path = Worksheet;
+			sourceTree = "<group>";
+		};
+		B14E03C324346E41000DB743 /* XMLCoder */ = {
+			isa = PBXGroup;
+			children = (
+				B14E03C624346EF6000DB743 /* Encoder */,
+				B14E03C524346EE1000DB743 /* Decoder */,
+				B14E03C424346ECA000DB743 /* Auxiliaries */,
+			);
+			path = XMLCoder;
+			sourceTree = "<group>";
+		};
+		B14E03C424346ECA000DB743 /* Auxiliaries */ = {
+			isa = PBXGroup;
+			children = (
+				B14E03C724346F29000DB743 /* Box */,
+				B14E041724346F6C000DB743 /* ISO8601DateFormatter.swift */,
+				B14E041924346F6C000DB743 /* KeyedStorage.swift */,
+				B14E041324346F6C000DB743 /* Metatypes.swift */,
+				B14E041A24346F6C000DB743 /* String+Extensions.swift */,
+				B14E041424346F6C000DB743 /* XMLChoiceCodingKey.swift */,
+				B14E041524346F6C000DB743 /* XMLCoderElement.swift */,
+				B14E041224346F6C000DB743 /* XMLHeader.swift */,
+				B14E041824346F6C000DB743 /* XMLKey.swift */,
+				B14E041624346F6C000DB743 /* XMLStackParser.swift */,
+			);
+			path = Auxiliaries;
+			sourceTree = "<group>";
+		};
+		B14E03C524346EE1000DB743 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				B14E03E324346F3E000DB743 /* DecodingErrorExtension.swift */,
+				B14E03DC24346F3E000DB743 /* DynamicNodeDecoding.swift */,
+				B14E03DF24346F3E000DB743 /* SingleValueDecodingContainer.swift */,
+				B14E03DE24346F3E000DB743 /* XMLChoiceDecodingContainer.swift */,
+				B14E03E024346F3E000DB743 /* XMLDecoder.swift */,
+				B14E03E424346F3E000DB743 /* XMLDecoderImplementation.swift */,
+				B14E03E224346F3E000DB743 /* XMLDecodingStorage.swift */,
+				B14E03DD24346F3E000DB743 /* XMLKeyedDecodingContainer.swift */,
+				B14E03E124346F3E000DB743 /* XMLUnkeyedDecodingContainer.swift */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
+		B14E03C624346EF6000DB743 /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				B14E03CA24346F34000DB743 /* DynamicNodeEncoding.swift */,
+				B14E03D124346F34000DB743 /* EncodingErrorExtension.swift */,
+				B14E03CB24346F34000DB743 /* SingleValueEncodingContainer.swift */,
+				B14E03CE24346F34000DB743 /* XMLChoiceEncodingContainer.swift */,
+				B14E03D024346F34000DB743 /* XMLEncoder.swift */,
+				B14E03CF24346F34000DB743 /* XMLEncoderImplementation.swift */,
+				B14E03CC24346F34000DB743 /* XMLEncodingStorage.swift */,
+				B14E03C824346F34000DB743 /* XMLKeyedEncodingContainer.swift */,
+				B14E03CD24346F34000DB743 /* XMLReferencingEncoder.swift */,
+				B14E03C924346F34000DB743 /* XMLUnkeyedEncodingContainer.swift */,
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
+		B14E03C724346F29000DB743 /* Box */ = {
+			isa = PBXGroup;
+			children = (
+				B14E03F724346F5F000DB743 /* BoolBox.swift */,
+				B14E03EF24346F5F000DB743 /* Box.swift */,
+				B14E03F224346F5F000DB743 /* ChoiceBox.swift */,
+				B14E03F324346F5F000DB743 /* DataBox.swift */,
+				B14E03EE24346F5F000DB743 /* DateBox.swift */,
+				B14E03F124346F5F000DB743 /* DecimalBox.swift */,
+				B14E03FA24346F5F000DB743 /* DoubleBox.swift */,
+				B14E03FB24346F5F000DB743 /* FloatBox.swift */,
+				B14E03F924346F5F000DB743 /* IntBox.swift */,
+				B14E03F024346F5F000DB743 /* KeyedBox.swift */,
+				B14E03F524346F5F000DB743 /* NullBox.swift */,
+				B14E03F824346F5F000DB743 /* SharedBox.swift */,
+				B14E03F424346F5F000DB743 /* SingleKeyedBox.swift */,
+				B14E03FC24346F5F000DB743 /* StringBox.swift */,
+				B14E03FE24346F5F000DB743 /* UIntBox.swift */,
+				B14E03F624346F5F000DB743 /* UnkeyedBox.swift */,
+				B14E03FF24346F5F000DB743 /* URLBox.swift */,
+				B14E03FD24346F5F000DB743 /* ValueBox.swift */,
+			);
+			path = Box;
+			sourceTree = "<group>";
+		};
+		B14E042424347097000DB743 /* weichsel */ = {
+			isa = PBXGroup;
+			children = (
+				B14E0425243470AD000DB743 /* ZIPFoundation */,
+			);
+			path = weichsel;
+			sourceTree = "<group>";
+		};
+		B14E0425243470AD000DB743 /* ZIPFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				B14E0429243470CC000DB743 /* Archive.swift */,
+				B14E042C243470CC000DB743 /* Archive+MemoryFile.swift */,
+				B14E0428243470CC000DB743 /* Archive+Reading.swift */,
+				B14E042D243470CC000DB743 /* Archive+Writing.swift */,
+				B14E0427243470CC000DB743 /* Data+Compression.swift */,
+				B14E042A243470CC000DB743 /* Data+Serialization.swift */,
+				B14E0426243470CC000DB743 /* Entry.swift */,
+				B14E042B243470CC000DB743 /* FileManager+ZIP.swift */,
+			);
+			path = ZIPFoundation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B14E039624346C56000DB743 /* HomeMoney */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B14E03A524346C63000DB743 /* Build configuration list for PBXNativeTarget "HomeMoney" */;
+			buildPhases = (
+				B14E039324346C56000DB743 /* Sources */,
+				B14E039424346C56000DB743 /* Frameworks */,
+				B14E039524346C56000DB743 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomeMoney;
+			productName = HomeMoney;
+			productReference = B14E039724346C56000DB743 /* HomeMoney.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B14E038F24346C56000DB743 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "sea-kg";
+				TargetAttributes = {
+					B14E039624346C56000DB743 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B14E039224346C56000DB743 /* Build configuration list for PBXProject "HomeMoney" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B14E038E24346C56000DB743;
+			productRefGroup = B14E039824346C56000DB743 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B14E039624346C56000DB743 /* HomeMoney */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B14E039524346C56000DB743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B14E039D24346C63000DB743 /* Assets.xcassets in Resources */,
+				B14E03A024346C63000DB743 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B14E039324346C56000DB743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B14E042E243470CC000DB743 /* Entry.swift in Sources */,
+				B14E041E24346F6C000DB743 /* XMLCoderElement.swift in Sources */,
+				B14E040E24346F5F000DB743 /* StringBox.swift in Sources */,
+				B14E040024346F5F000DB743 /* DateBox.swift in Sources */,
+				B14E03DA24346F34000DB743 /* XMLEncoder.swift in Sources */,
+				B14E040824346F5F000DB743 /* UnkeyedBox.swift in Sources */,
+				B14E041B24346F6C000DB743 /* XMLHeader.swift in Sources */,
+				B14E03E624346F3E000DB743 /* XMLKeyedDecodingContainer.swift in Sources */,
+				B14E041124346F5F000DB743 /* URLBox.swift in Sources */,
+				B14E040D24346F5F000DB743 /* FloatBox.swift in Sources */,
+				B14E042024346F6C000DB743 /* ISO8601DateFormatter.swift in Sources */,
+				B14E039B24346C56000DB743 /* AppDelegate.swift in Sources */,
+				B14E03D324346F34000DB743 /* XMLUnkeyedEncodingContainer.swift in Sources */,
+				B14E041C24346F6C000DB743 /* Metatypes.swift in Sources */,
+				B14E03EB24346F3F000DB743 /* XMLDecodingStorage.swift in Sources */,
+				B14E042224346F6C000DB743 /* KeyedStorage.swift in Sources */,
+				B14E03E724346F3E000DB743 /* XMLChoiceDecodingContainer.swift in Sources */,
+				B14E041D24346F6C000DB743 /* XMLChoiceCodingKey.swift in Sources */,
+				B14E03ED24346F3F000DB743 /* XMLDecoderImplementation.swift in Sources */,
+				B14E03D824346F34000DB743 /* XMLChoiceEncodingContainer.swift in Sources */,
+				B14E041024346F5F000DB743 /* UIntBox.swift in Sources */,
+				B14E040A24346F5F000DB743 /* SharedBox.swift in Sources */,
+				B14E03E524346F3E000DB743 /* DynamicNodeDecoding.swift in Sources */,
+				B14E03B724346DC9000DB743 /* Styles.swift in Sources */,
+				B14E03C024346DE8000DB743 /* ColumnReference.swift in Sources */,
+				B14E0434243470CC000DB743 /* Archive+MemoryFile.swift in Sources */,
+				B14E03D724346F34000DB743 /* XMLReferencingEncoder.swift in Sources */,
+				B14E042124346F6C000DB743 /* XMLKey.swift in Sources */,
+				B14E040B24346F5F000DB743 /* IntBox.swift in Sources */,
+				B14E040524346F5F000DB743 /* DataBox.swift in Sources */,
+				B14E040124346F5F000DB743 /* Box.swift in Sources */,
+				B14E03B824346DC9000DB743 /* Path.swift in Sources */,
+				B14E03BE24346DE8000DB743 /* Worksheet.swift in Sources */,
+				B14E03D424346F34000DB743 /* DynamicNodeEncoding.swift in Sources */,
+				B14E03C224346DE8000DB743 /* Cell.swift in Sources */,
+				B14E03B524346DC9000DB743 /* CoreXLSX.swift in Sources */,
+				B14E040C24346F5F000DB743 /* DoubleBox.swift in Sources */,
+				B14E040424346F5F000DB743 /* ChoiceBox.swift in Sources */,
+				B14E0433243470CC000DB743 /* FileManager+ZIP.swift in Sources */,
+				B14E0430243470CC000DB743 /* Archive+Reading.swift in Sources */,
+				B14E042324346F6C000DB743 /* String+Extensions.swift in Sources */,
+				B14E03D524346F34000DB743 /* SingleValueEncodingContainer.swift in Sources */,
+				B14E03B224346DC9000DB743 /* SharedStrings.swift in Sources */,
+				B14E03B324346DC9000DB743 /* Relationships.swift in Sources */,
+				B14E03D924346F34000DB743 /* XMLEncoderImplementation.swift in Sources */,
+				B14E03EA24346F3E000DB743 /* XMLUnkeyedDecodingContainer.swift in Sources */,
+				B14E040924346F5F000DB743 /* BoolBox.swift in Sources */,
+				B14E03D624346F34000DB743 /* XMLEncodingStorage.swift in Sources */,
+				B14E0435243470CC000DB743 /* Archive+Writing.swift in Sources */,
+				B14E03BF24346DE8000DB743 /* CellReference.swift in Sources */,
+				B14E03B424346DC9000DB743 /* Comments.swift in Sources */,
+				B14E03E924346F3E000DB743 /* XMLDecoder.swift in Sources */,
+				B14E040624346F5F000DB743 /* SingleKeyedBox.swift in Sources */,
+				B14E03DB24346F34000DB743 /* EncodingErrorExtension.swift in Sources */,
+				B14E041F24346F6C000DB743 /* XMLStackParser.swift in Sources */,
+				B14E03E824346F3E000DB743 /* SingleValueDecodingContainer.swift in Sources */,
+				B14E03D224346F34000DB743 /* XMLKeyedEncodingContainer.swift in Sources */,
+				B14E0432243470CC000DB743 /* Data+Serialization.swift in Sources */,
+				B14E040324346F5F000DB743 /* DecimalBox.swift in Sources */,
+				B14E0431243470CC000DB743 /* Archive.swift in Sources */,
+				B14E03EC24346F3F000DB743 /* DecodingErrorExtension.swift in Sources */,
+				B14E040724346F5F000DB743 /* NullBox.swift in Sources */,
+				B14E040224346F5F000DB743 /* KeyedBox.swift in Sources */,
+				B14E03C124346DE8000DB743 /* CellQueries.swift in Sources */,
+				B14E042F243470CC000DB743 /* Data+Compression.swift in Sources */,
+				B14E03B624346DC9000DB743 /* Workbook.swift in Sources */,
+				B14E040F24346F5F000DB743 /* ValueBox.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B14E039E24346C63000DB743 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B14E039F24346C63000DB743 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B14E03A324346C63000DB743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B14E03A424346C63000DB743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B14E03A624346C63000DB743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HomeMoney/HomeMoney.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BXKFF632WG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = HomeMoney/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sea5kg.HomeMoney;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B14E03A724346C63000DB743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HomeMoney/HomeMoney.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BXKFF632WG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = HomeMoney/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sea5kg.HomeMoney;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B14E039224346C56000DB743 /* Build configuration list for PBXProject "HomeMoney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B14E03A324346C63000DB743 /* Debug */,
+				B14E03A424346C63000DB743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B14E03A524346C63000DB743 /* Build configuration list for PBXNativeTarget "HomeMoney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B14E03A624346C63000DB743 /* Debug */,
+				B14E03A724346C63000DB743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B14E038F24346C56000DB743 /* Project object */;
+}
