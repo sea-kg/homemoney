@@ -7,6 +7,8 @@
 //
 
 import Cocoa
+// import CoreXLSX
+
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, NSOpenSavePanelDelegate {
@@ -22,6 +24,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSOpenSavePanelDelegate {
         // Insert code here to tear down your application
     }
     @IBOutlet weak var pathToFile: NSTextField!
+    @IBOutlet weak var comboBoxMonthes: NSComboBox!
     
     @IBAction func selectFile(_ sender: NSButton) {
         let openPanel = NSOpenPanel();
@@ -39,6 +42,29 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSOpenSavePanelDelegate {
                 let path = openPanel.url!.path
                 print("path: \(path)");
                 self.pathToFile.stringValue = path
+                self.loadMonthesFromFile()
+            }
+        }
+    }
+    
+    func loadMonthesFromFile() {
+        let filePath = self.pathToFile.stringValue
+        guard let file = XLSXFile(filepath: filePath) else {
+            fatalError("XLSX file corrupted or does not exist")
+        }
+        if let paths = try? file.parseWorksheetPaths() {
+            for path in paths {
+                if let worksheet = try? file.parseWorksheet(at: path) {
+                    print(worksheet.properties ?? nil)
+                    
+                    // print(worksheet)
+                }
+                // worksheet
+                /*for row in worksheet.data?.rows ?? [] {
+                    for c in row.cells {
+                        print(c)
+                    }
+                }*/
             }
         }
     }

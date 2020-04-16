@@ -14,6 +14,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="HomeMoney" customModuleProvider="target">
             <connections>
+                <outlet property="comboBoxMonthes" destination="OxK-Y6-WsL" id="s22-s1-dAZ"/>
                 <outlet property="pathToFile" destination="MQl-hW-NMS" id="Or2-d8-B95"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -679,22 +680,35 @@
         <window title="HomeMoney" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="737" height="360"/>
+            <rect key="contentRect" x="335" y="390" width="743" height="350"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="737" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="743" height="350"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MQl-hW-NMS">
-                        <rect key="frame" x="20" y="318" width="571" height="21"/>
+                        <rect key="frame" x="20" y="308" width="571" height="21"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" drawsBackground="YES" usesSingleLineMode="YES" id="W7A-ik-CXN">
                             <font key="font" usesAppearanceFont="YES"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <comboBox verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OxK-Y6-WsL">
+                        <rect key="frame" x="21" y="258" width="28" height="25"/>
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="75F-3u-MUx">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <objectValues>
+                                <string>Item 1</string>
+                                <string>Item 2</string>
+                                <string>Item 3</string>
+                            </objectValues>
+                        </comboBoxCell>
+                    </comboBox>
                     <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MZW-hs-E6k">
-                        <rect key="frame" x="593" y="310" width="130" height="32"/>
+                        <rect key="frame" x="593" y="300" width="130" height="32"/>
                         <buttonCell key="cell" type="push" title="Выбрать файл" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="V6a-vV-CeP">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -705,14 +719,17 @@
                     </button>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="MZW-hs-E6k" firstAttribute="centerY" secondItem="MQl-hW-NMS" secondAttribute="centerY" id="3I2-Qs-P3c"/>
                     <constraint firstItem="MZW-hs-E6k" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="22" id="6uc-kB-Cr3"/>
                     <constraint firstItem="MZW-hs-E6k" firstAttribute="leading" secondItem="MQl-hW-NMS" secondAttribute="trailing" constant="8" id="KwY-zp-zr3"/>
+                    <constraint firstItem="OxK-Y6-WsL" firstAttribute="top" secondItem="MQl-hW-NMS" secondAttribute="bottom" constant="27" id="X21-RO-0gz"/>
                     <constraint firstAttribute="trailing" secondItem="MZW-hs-E6k" secondAttribute="trailing" constant="20" id="cOg-ed-1bq"/>
+                    <constraint firstItem="OxK-Y6-WsL" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="21" id="ejG-7S-J4I"/>
                     <constraint firstItem="MQl-hW-NMS" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="21" id="l2V-GN-xap"/>
                     <constraint firstItem="MQl-hW-NMS" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="wiR-Z2-fO8"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="210.5" y="-106"/>
+            <point key="canvasLocation" x="384.5" y="-111"/>
         </window>
     </objects>
 </document>
