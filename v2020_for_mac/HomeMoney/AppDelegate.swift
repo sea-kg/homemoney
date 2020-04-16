@@ -9,7 +9,7 @@
 import Cocoa
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, NSOpenSavePanelDelegate {
 
     @IBOutlet weak var window: NSWindow!
 
@@ -21,7 +21,26 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-
-
+    @IBOutlet weak var pathToFile: NSTextField!
+    
+    @IBAction func selectFile(_ sender: NSButton) {
+        let openPanel = NSOpenPanel();
+        openPanel.title = "Выберите файл xlsx"
+        openPanel.message = ""
+        openPanel.showsResizeIndicator = true;
+        openPanel.canChooseDirectories = false;
+        openPanel.canChooseFiles = true;
+        openPanel.allowsMultipleSelection = false;
+        openPanel.canCreateDirectories = false;
+        openPanel.delegate = self;
+        
+        openPanel.begin { (result) -> Void in
+            if (result == NSApplication.ModalResponse.OK) {
+                let path = openPanel.url!.path
+                print("path: \(path)");
+                self.pathToFile.stringValue = path
+            }
+        }
+    }
 }
 
