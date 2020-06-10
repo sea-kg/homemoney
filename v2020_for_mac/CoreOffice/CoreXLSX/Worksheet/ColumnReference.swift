@@ -1,6 +1,16 @@
+// Copyright 2019-2020 CoreOffice contributors
 //
-//  Reference.swift
-//  CoreXLSX
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 //
 //  Created by Max Desiatov on 13/11/2018.
 //
@@ -45,7 +55,7 @@ public struct ColumnReference {
       )!)) + acc
     }
 
-    let result = (0..<symbolsCount).compactMap(symbolValue).reduce("", reducer)
+    let result = (0 ..< symbolsCount).compactMap(symbolValue).reduce("", reducer)
 
     self.value = result
   }
@@ -76,7 +86,7 @@ public struct ColumnReference {
     // from a previous iteration
     var power = 1
 
-    intValue = (0..<count).map {
+    intValue = (0 ..< count).map {
       // integer value for a symbol at a given position
       let symbolValue = Int(scalars[count - $0 - 1].value -
         ColumnReference.firstAllowedCharacter.value + 1)
@@ -97,7 +107,7 @@ public struct ColumnReference {
     Int(lastAllowedCharacter.value - firstAllowedCharacter.value + 1)
 
   static let allowedCharacters =
-    CharacterSet(charactersIn: firstAllowedCharacter...lastAllowedCharacter)
+    CharacterSet(charactersIn: firstAllowedCharacter ... lastAllowedCharacter)
 }
 
 extension ColumnReference: CustomStringConvertible {

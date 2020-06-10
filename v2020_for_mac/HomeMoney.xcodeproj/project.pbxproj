@@ -10,18 +10,6 @@
 		B14E039B24346C56000DB743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E039A24346C56000DB743 /* AppDelegate.swift */; };
 		B14E039D24346C63000DB743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14E039C24346C63000DB743 /* Assets.xcassets */; };
 		B14E03A024346C63000DB743 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B14E039E24346C63000DB743 /* MainMenu.xib */; };
-		B14E03B224346DC9000DB743 /* SharedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03AB24346DC9000DB743 /* SharedStrings.swift */; };
-		B14E03B324346DC9000DB743 /* Relationships.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03AC24346DC9000DB743 /* Relationships.swift */; };
-		B14E03B424346DC9000DB743 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03AD24346DC9000DB743 /* Comments.swift */; };
-		B14E03B524346DC9000DB743 /* CoreXLSX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03AE24346DC9000DB743 /* CoreXLSX.swift */; };
-		B14E03B624346DC9000DB743 /* Workbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03AF24346DC9000DB743 /* Workbook.swift */; };
-		B14E03B724346DC9000DB743 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03B024346DC9000DB743 /* Styles.swift */; };
-		B14E03B824346DC9000DB743 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03B124346DC9000DB743 /* Path.swift */; };
-		B14E03BE24346DE8000DB743 /* Worksheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03B924346DE8000DB743 /* Worksheet.swift */; };
-		B14E03BF24346DE8000DB743 /* CellReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03BA24346DE8000DB743 /* CellReference.swift */; };
-		B14E03C024346DE8000DB743 /* ColumnReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03BB24346DE8000DB743 /* ColumnReference.swift */; };
-		B14E03C124346DE8000DB743 /* CellQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03BC24346DE8000DB743 /* CellQueries.swift */; };
-		B14E03C224346DE8000DB743 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03BD24346DE8000DB743 /* Cell.swift */; };
 		B14E03D224346F34000DB743 /* XMLKeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03C824346F34000DB743 /* XMLKeyedEncodingContainer.swift */; };
 		B14E03D324346F34000DB743 /* XMLUnkeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03C924346F34000DB743 /* XMLUnkeyedEncodingContainer.swift */; };
 		B14E03D424346F34000DB743 /* DynamicNodeEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E03CA24346F34000DB743 /* DynamicNodeEncoding.swift */; };
@@ -76,6 +64,19 @@
 		B14E0433243470CC000DB743 /* FileManager+ZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E042B243470CC000DB743 /* FileManager+ZIP.swift */; };
 		B14E0434243470CC000DB743 /* Archive+MemoryFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E042C243470CC000DB743 /* Archive+MemoryFile.swift */; };
 		B14E0435243470CC000DB743 /* Archive+Writing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E042D243470CC000DB743 /* Archive+Writing.swift */; };
+		B1B75D3824915EBE002905A2 /* CellReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B75D3324915EBE002905A2 /* CellReference.swift */; };
+		B1B75D3924915EBE002905A2 /* CellQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B75D3424915EBE002905A2 /* CellQueries.swift */; };
+		B1B75D3A24915EBE002905A2 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B75D3524915EBE002905A2 /* Cell.swift */; };
+		B1B75D3B24915EBE002905A2 /* ColumnReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B75D3624915EBE002905A2 /* ColumnReference.swift */; };
+		B1B75D3C24915EBE002905A2 /* Worksheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B75D3724915EBE002905A2 /* Worksheet.swift */; };
+		B1B75D4424915ED7002905A2 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B75D3D24915ED6002905A2 /* Styles.swift */; };
+		B1B75D4524915ED7002905A2 /* SharedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B75D3E24915ED6002905A2 /* SharedStrings.swift */; };
+		B1B75D4624915ED7002905A2 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B75D3F24915ED7002905A2 /* Path.swift */; };
+		B1B75D4724915ED7002905A2 /* Relationships.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B75D4024915ED7002905A2 /* Relationships.swift */; };
+		B1B75D4824915ED7002905A2 /* Workbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B75D4124915ED7002905A2 /* Workbook.swift */; };
+		B1B75D4924915ED7002905A2 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B75D4224915ED7002905A2 /* Comments.swift */; };
+		B1B75D4A24915ED7002905A2 /* XLSXFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B75D4324915ED7002905A2 /* XLSXFile.swift */; };
+		B1B75D4C24916489002905A2 /* PageMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B75D4B24916489002905A2 /* PageMonth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,18 +86,6 @@
 		B14E039F24346C63000DB743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B14E03A124346C63000DB743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B14E03A224346C63000DB743 /* HomeMoney.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeMoney.entitlements; sourceTree = "<group>"; };
-		B14E03AB24346DC9000DB743 /* SharedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedStrings.swift; sourceTree = "<group>"; };
-		B14E03AC24346DC9000DB743 /* Relationships.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relationships.swift; sourceTree = "<group>"; };
-		B14E03AD24346DC9000DB743 /* Comments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
-		B14E03AE24346DC9000DB743 /* CoreXLSX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreXLSX.swift; sourceTree = "<group>"; };
-		B14E03AF24346DC9000DB743 /* Workbook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workbook.swift; sourceTree = "<group>"; };
-		B14E03B024346DC9000DB743 /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
-		B14E03B124346DC9000DB743 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
-		B14E03B924346DE8000DB743 /* Worksheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worksheet.swift; sourceTree = "<group>"; };
-		B14E03BA24346DE8000DB743 /* CellReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellReference.swift; sourceTree = "<group>"; };
-		B14E03BB24346DE8000DB743 /* ColumnReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnReference.swift; sourceTree = "<group>"; };
-		B14E03BC24346DE8000DB743 /* CellQueries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellQueries.swift; sourceTree = "<group>"; };
-		B14E03BD24346DE8000DB743 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		B14E03C824346F34000DB743 /* XMLKeyedEncodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLKeyedEncodingContainer.swift; sourceTree = "<group>"; };
 		B14E03C924346F34000DB743 /* XMLUnkeyedEncodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLUnkeyedEncodingContainer.swift; sourceTree = "<group>"; };
 		B14E03CA24346F34000DB743 /* DynamicNodeEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicNodeEncoding.swift; sourceTree = "<group>"; };
@@ -151,6 +140,19 @@
 		B14E042B243470CC000DB743 /* FileManager+ZIP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+ZIP.swift"; sourceTree = "<group>"; };
 		B14E042C243470CC000DB743 /* Archive+MemoryFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Archive+MemoryFile.swift"; sourceTree = "<group>"; };
 		B14E042D243470CC000DB743 /* Archive+Writing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Archive+Writing.swift"; sourceTree = "<group>"; };
+		B1B75D3324915EBE002905A2 /* CellReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellReference.swift; sourceTree = "<group>"; };
+		B1B75D3424915EBE002905A2 /* CellQueries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellQueries.swift; sourceTree = "<group>"; };
+		B1B75D3524915EBE002905A2 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		B1B75D3624915EBE002905A2 /* ColumnReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnReference.swift; sourceTree = "<group>"; };
+		B1B75D3724915EBE002905A2 /* Worksheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worksheet.swift; sourceTree = "<group>"; };
+		B1B75D3D24915ED6002905A2 /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		B1B75D3E24915ED6002905A2 /* SharedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedStrings.swift; sourceTree = "<group>"; };
+		B1B75D3F24915ED7002905A2 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		B1B75D4024915ED7002905A2 /* Relationships.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relationships.swift; sourceTree = "<group>"; };
+		B1B75D4124915ED7002905A2 /* Workbook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workbook.swift; sourceTree = "<group>"; };
+		B1B75D4224915ED7002905A2 /* Comments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
+		B1B75D4324915ED7002905A2 /* XLSXFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLSXFile.swift; sourceTree = "<group>"; };
+		B1B75D4B24916489002905A2 /* PageMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageMonth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		B14E038E24346C56000DB743 = {
 			isa = PBXGroup;
 			children = (
+				B1B75D3024915E56002905A2 /* CoreOffice */,
 				B14E042424347097000DB743 /* weichsel */,
 				B14E03A824346D46000DB743 /* MaxDesiatov */,
 				B14E039924346C56000DB743 /* HomeMoney */,
@@ -190,6 +193,7 @@
 				B14E039E24346C63000DB743 /* MainMenu.xib */,
 				B14E03A124346C63000DB743 /* Info.plist */,
 				B14E03A224346C63000DB743 /* HomeMoney.entitlements */,
+				B1B75D4B24916489002905A2 /* PageMonth.swift */,
 			);
 			path = HomeMoney;
 			sourceTree = "<group>";
@@ -198,36 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				B14E03C324346E41000DB743 /* XMLCoder */,
-				B14E03A924346D54000DB743 /* CoreXLSX */,
 			);
 			path = MaxDesiatov;
-			sourceTree = "<group>";
-		};
-		B14E03A924346D54000DB743 /* CoreXLSX */ = {
-			isa = PBXGroup;
-			children = (
-				B14E03AA24346D80000DB743 /* Worksheet */,
-				B14E03AD24346DC9000DB743 /* Comments.swift */,
-				B14E03AE24346DC9000DB743 /* CoreXLSX.swift */,
-				B14E03B124346DC9000DB743 /* Path.swift */,
-				B14E03AC24346DC9000DB743 /* Relationships.swift */,
-				B14E03AB24346DC9000DB743 /* SharedStrings.swift */,
-				B14E03B024346DC9000DB743 /* Styles.swift */,
-				B14E03AF24346DC9000DB743 /* Workbook.swift */,
-			);
-			path = CoreXLSX;
-			sourceTree = "<group>";
-		};
-		B14E03AA24346D80000DB743 /* Worksheet */ = {
-			isa = PBXGroup;
-			children = (
-				B14E03BD24346DE8000DB743 /* Cell.swift */,
-				B14E03BC24346DE8000DB743 /* CellQueries.swift */,
-				B14E03BA24346DE8000DB743 /* CellReference.swift */,
-				B14E03BB24346DE8000DB743 /* ColumnReference.swift */,
-				B14E03B924346DE8000DB743 /* Worksheet.swift */,
-			);
-			path = Worksheet;
 			sourceTree = "<group>";
 		};
 		B14E03C324346E41000DB743 /* XMLCoder */ = {
@@ -338,6 +314,41 @@
 			path = ZIPFoundation;
 			sourceTree = "<group>";
 		};
+		B1B75D3024915E56002905A2 /* CoreOffice */ = {
+			isa = PBXGroup;
+			children = (
+				B1B75D3124915E70002905A2 /* CoreXLSX */,
+			);
+			path = CoreOffice;
+			sourceTree = "<group>";
+		};
+		B1B75D3124915E70002905A2 /* CoreXLSX */ = {
+			isa = PBXGroup;
+			children = (
+				B1B75D4224915ED7002905A2 /* Comments.swift */,
+				B1B75D3F24915ED7002905A2 /* Path.swift */,
+				B1B75D4024915ED7002905A2 /* Relationships.swift */,
+				B1B75D3E24915ED6002905A2 /* SharedStrings.swift */,
+				B1B75D3D24915ED6002905A2 /* Styles.swift */,
+				B1B75D4124915ED7002905A2 /* Workbook.swift */,
+				B1B75D4324915ED7002905A2 /* XLSXFile.swift */,
+				B1B75D3224915E98002905A2 /* Worksheet */,
+			);
+			path = CoreXLSX;
+			sourceTree = "<group>";
+		};
+		B1B75D3224915E98002905A2 /* Worksheet */ = {
+			isa = PBXGroup;
+			children = (
+				B1B75D3524915EBE002905A2 /* Cell.swift */,
+				B1B75D3424915EBE002905A2 /* CellQueries.swift */,
+				B1B75D3324915EBE002905A2 /* CellReference.swift */,
+				B1B75D3624915EBE002905A2 /* ColumnReference.swift */,
+				B1B75D3724915EBE002905A2 /* Worksheet.swift */,
+			);
+			path = Worksheet;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -365,7 +376,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "sea-kg";
 				TargetAttributes = {
 					B14E039624346C56000DB743 = {
@@ -413,6 +424,8 @@
 				B14E040E24346F5F000DB743 /* StringBox.swift in Sources */,
 				B14E040024346F5F000DB743 /* DateBox.swift in Sources */,
 				B14E03DA24346F34000DB743 /* XMLEncoder.swift in Sources */,
+				B1B75D4924915ED7002905A2 /* Comments.swift in Sources */,
+				B1B75D4424915ED7002905A2 /* Styles.swift in Sources */,
 				B14E040824346F5F000DB743 /* UnkeyedBox.swift in Sources */,
 				B14E041B24346F6C000DB743 /* XMLHeader.swift in Sources */,
 				B14E03E624346F3E000DB743 /* XMLKeyedDecodingContainer.swift in Sources */,
@@ -420,6 +433,7 @@
 				B14E040D24346F5F000DB743 /* FloatBox.swift in Sources */,
 				B14E042024346F6C000DB743 /* ISO8601DateFormatter.swift in Sources */,
 				B14E039B24346C56000DB743 /* AppDelegate.swift in Sources */,
+				B1B75D3B24915EBE002905A2 /* ColumnReference.swift in Sources */,
 				B14E03D324346F34000DB743 /* XMLUnkeyedEncodingContainer.swift in Sources */,
 				B14E041C24346F6C000DB743 /* Metatypes.swift in Sources */,
 				B14E03EB24346F3F000DB743 /* XMLDecodingStorage.swift in Sources */,
@@ -431,49 +445,47 @@
 				B14E041024346F5F000DB743 /* UIntBox.swift in Sources */,
 				B14E040A24346F5F000DB743 /* SharedBox.swift in Sources */,
 				B14E03E524346F3E000DB743 /* DynamicNodeDecoding.swift in Sources */,
-				B14E03B724346DC9000DB743 /* Styles.swift in Sources */,
-				B14E03C024346DE8000DB743 /* ColumnReference.swift in Sources */,
 				B14E0434243470CC000DB743 /* Archive+MemoryFile.swift in Sources */,
 				B14E03D724346F34000DB743 /* XMLReferencingEncoder.swift in Sources */,
 				B14E042124346F6C000DB743 /* XMLKey.swift in Sources */,
 				B14E040B24346F5F000DB743 /* IntBox.swift in Sources */,
+				B1B75D3C24915EBE002905A2 /* Worksheet.swift in Sources */,
 				B14E040524346F5F000DB743 /* DataBox.swift in Sources */,
 				B14E040124346F5F000DB743 /* Box.swift in Sources */,
-				B14E03B824346DC9000DB743 /* Path.swift in Sources */,
-				B14E03BE24346DE8000DB743 /* Worksheet.swift in Sources */,
 				B14E03D424346F34000DB743 /* DynamicNodeEncoding.swift in Sources */,
-				B14E03C224346DE8000DB743 /* Cell.swift in Sources */,
-				B14E03B524346DC9000DB743 /* CoreXLSX.swift in Sources */,
+				B1B75D4524915ED7002905A2 /* SharedStrings.swift in Sources */,
 				B14E040C24346F5F000DB743 /* DoubleBox.swift in Sources */,
+				B1B75D3A24915EBE002905A2 /* Cell.swift in Sources */,
 				B14E040424346F5F000DB743 /* ChoiceBox.swift in Sources */,
 				B14E0433243470CC000DB743 /* FileManager+ZIP.swift in Sources */,
 				B14E0430243470CC000DB743 /* Archive+Reading.swift in Sources */,
 				B14E042324346F6C000DB743 /* String+Extensions.swift in Sources */,
+				B1B75D4C24916489002905A2 /* PageMonth.swift in Sources */,
 				B14E03D524346F34000DB743 /* SingleValueEncodingContainer.swift in Sources */,
-				B14E03B224346DC9000DB743 /* SharedStrings.swift in Sources */,
-				B14E03B324346DC9000DB743 /* Relationships.swift in Sources */,
+				B1B75D3924915EBE002905A2 /* CellQueries.swift in Sources */,
 				B14E03D924346F34000DB743 /* XMLEncoderImplementation.swift in Sources */,
 				B14E03EA24346F3E000DB743 /* XMLUnkeyedDecodingContainer.swift in Sources */,
 				B14E040924346F5F000DB743 /* BoolBox.swift in Sources */,
 				B14E03D624346F34000DB743 /* XMLEncodingStorage.swift in Sources */,
 				B14E0435243470CC000DB743 /* Archive+Writing.swift in Sources */,
-				B14E03BF24346DE8000DB743 /* CellReference.swift in Sources */,
-				B14E03B424346DC9000DB743 /* Comments.swift in Sources */,
+				B1B75D4724915ED7002905A2 /* Relationships.swift in Sources */,
 				B14E03E924346F3E000DB743 /* XMLDecoder.swift in Sources */,
 				B14E040624346F5F000DB743 /* SingleKeyedBox.swift in Sources */,
 				B14E03DB24346F34000DB743 /* EncodingErrorExtension.swift in Sources */,
 				B14E041F24346F6C000DB743 /* XMLStackParser.swift in Sources */,
 				B14E03E824346F3E000DB743 /* SingleValueDecodingContainer.swift in Sources */,
 				B14E03D224346F34000DB743 /* XMLKeyedEncodingContainer.swift in Sources */,
+				B1B75D3824915EBE002905A2 /* CellReference.swift in Sources */,
 				B14E0432243470CC000DB743 /* Data+Serialization.swift in Sources */,
 				B14E040324346F5F000DB743 /* DecimalBox.swift in Sources */,
 				B14E0431243470CC000DB743 /* Archive.swift in Sources */,
 				B14E03EC24346F3F000DB743 /* DecodingErrorExtension.swift in Sources */,
 				B14E040724346F5F000DB743 /* NullBox.swift in Sources */,
 				B14E040224346F5F000DB743 /* KeyedBox.swift in Sources */,
-				B14E03C124346DE8000DB743 /* CellQueries.swift in Sources */,
+				B1B75D4A24915ED7002905A2 /* XLSXFile.swift in Sources */,
+				B1B75D4824915ED7002905A2 /* Workbook.swift in Sources */,
 				B14E042F243470CC000DB743 /* Data+Compression.swift in Sources */,
-				B14E03B624346DC9000DB743 /* Workbook.swift in Sources */,
+				B1B75D4624915ED7002905A2 /* Path.swift in Sources */,
 				B14E040F24346F5F000DB743 /* ValueBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -610,6 +622,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HomeMoney/HomeMoney.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = BXKFF632WG;
@@ -630,6 +643,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HomeMoney/HomeMoney.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = BXKFF632WG;

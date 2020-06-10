@@ -686,16 +686,19 @@
                 <rect key="frame" x="0.0" y="0.0" width="743" height="350"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MQl-hW-NMS">
-                        <rect key="frame" x="20" y="308" width="571" height="21"/>
+                    <textField horizontalHuggingPriority="249" verticalHuggingPriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="MQl-hW-NMS" userLabel="SelectedFilePath">
+                        <rect key="frame" x="20" y="308" width="577" height="21"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" drawsBackground="YES" usesSingleLineMode="YES" id="W7A-ik-CXN">
                             <font key="font" usesAppearanceFont="YES"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <comboBox verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OxK-Y6-WsL">
-                        <rect key="frame" x="21" y="258" width="28" height="25"/>
+                    <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OxK-Y6-WsL">
+                        <rect key="frame" x="21" y="258" width="185" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="182" id="D56-Zz-0Va"/>
+                        </constraints>
                         <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="75F-3u-MUx">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -707,8 +710,8 @@
                             </objectValues>
                         </comboBoxCell>
                     </comboBox>
-                    <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MZW-hs-E6k">
-                        <rect key="frame" x="593" y="300" width="130" height="32"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MZW-hs-E6k" userLabel="SelectFile">
+                        <rect key="frame" x="599" y="302" width="130" height="30"/>
                         <buttonCell key="cell" type="push" title="Выбрать файл" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="V6a-vV-CeP">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
